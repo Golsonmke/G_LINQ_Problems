@@ -10,6 +10,13 @@ namespace LINQProblems
     {
         static void Main(string[] args)
         {
+                List<string> words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathmatics" };
+            IEnumerable<string> result = LINQ.CheckWords(words, LINQ.Contains);
+
+            foreach(string word in result)
+            {
+                Console.WriteLine(word);
+            }
         }
     }
 }
