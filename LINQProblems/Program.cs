@@ -17,6 +17,13 @@ namespace LINQProblems
             {
                 Console.WriteLine(word);
             }
-        }
+            //**************************************************************************************************************************
+            List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
+            IEnumerable<string> namesResult = LINQ.CheckForDuplicates(names, LINQ.Contains);
+            foreach (string name in namesResult)
+            {
+                Console.WriteLine(name);
+            }
+        } 
     }
 }
